@@ -1,0 +1,371 @@
+/* CSS Document */
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*第一部分*/
+.banner{
+  margin: 0 auto;
+  width: 100%;
+  height: 70%;
+  background-color: #7E7E7E;
+}
+/*底层视频*/
+#video{
+  padding: 0%;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+/*导航条部分-*/
+.container{  
+  margin: 0 auto;                      /*导航栏的big box*/
+  width: 100%;
+  height: 20%;
+  float: left;
+  position: absolute;
+  z-index: 10;
+
+  }
+
+.container .logo{                 /*big box中的第一部分logo*/
+  width: 33%;
+  height: 100%;
+  margin: 0 auto;
+  float: left;		
+}
+.logo img{
+    float:right;
+}
+
+.nav{                          /*big box中第二部分导航*/
+  float: left;
+  padding: 0;
+  margin: 0 5%;
+  width: 45%;
+  height: inherit;
+  
+
+}
+.nav li{                      /*第二部分的每个标签*/
+  list-style: none ;
+  float: left;
+  width: 25%;
+  height: inherit;
+  font-size: 35px;
+  color:#fff;
+  line-height: 138px;
+  letter-spacing:10px;
+  text-align: center;
+}
+.biaoyu{
+  width: 100%;  height: 80%;  position: absolute;z-index: 10;
+}
+.biaoyu p{
+  width: 100%;  height: auto;  margin: 0 auto; 
+  font-size: 50px;   text-align: center;  color:#fff;
+}
+
+.kouhao{                     /*奋力打造我国网信产业核心力量和组织平台*/
+  float: inherit;
+  width: 100%;
+  height: 45px; 
+  margin: 0 auto;
+  padding: 140px 0;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 15px;
+  font-family: "microsoft yahei";
+  color: #8B8F99;
+}
+
+.rukou{ width: 1520px;	height: 630px;	margin: 0 auto;}    /*中间五个入口 big box*/
+  
+.rukou .rukou1{	float: left;	width: 500px;	height: 310px;	position: relative;	z-index: 0;	cursor: pointer; /*big box中的 第 一 个 入口*/
+      margin: 0;              }
+.rukou .rukou2{ float: left;	width: 1010px;  height: 310px;	position: relative;	z-index: 0;	cursor: pointer;      /*big box中的 第 二 个 入口*/
+    margin: 0 0 0 10px;     }
+.rukou .rukou3{ float: left;	width: 500px;	height: 310px;	position: relative;	cursor: pointer;  /*big box中的 第 三 个 入口*/
+    margin: 10px 0 0 0;		}
+.rukou .rukou4{ float: left;	width: 500px;	height: 310px;	position: relative;	cursor: pointer;  /*big box中的 第 四 个 入口*/
+    margin:10px 0 0 10px;   }
+.rukou .rukou5{  float: left;	width: 500px;	height: 310px;	position: relative;	cursor: pointer;   /*big box中的 第 五 个 入口*/
+    margin: 10px 0 0 10px;	} 
+
+
+.liangdu1,.liangdu2,.liangdu3,.liangdu4,.liangdu5{        /*图片亮度变暗*/
+  width: 100%;	height: 100%;	background:  #000000;
+  position: absolute;
+  z-index: 20;
+  opacity: 0.4;}
+
+
+.jianbian1,.jianbian2,.jianbian3,.jianbian4,.jianbian5{      /*蓝色背景平移*/
+  width: 100%;	height: 100%;	background:#3551a2;
+  position: absolute;
+  z-index: 30;
+  opacity: 0.0;}
+
+    /*动画*/  /*蓝色变深*/
+.rukou1:hover .jianbian1, .rukou2:hover .jianbian2, .rukou3:hover .jianbian3, .rukou4:hover .jianbian4, .rukou5:hover .jianbian5
+{	opacity: 0.7;
+  transition: all 0.3s ease-in;}
+
+    /*黑色变浅*/
+.rukou1:hover .liangdu1,.rukou2:hover .liangdu2,.rukou3:hover .liangdu3,.rukou4:hover .liangdu4,.rukou5:hover .liangdu5
+{   opacity: 0.1;
+  transition: all 0.3s ease-in;}
+
+  /*入口文字属性*/
+.rukou1 .rukou1wenzi,.rukou2 .rukou2wenzi,.rukou3 .rukou3wenzi,.rukou4 .rukou4wenzi,.rukou5 .rukou5wenzi
+{   width: 100%;	height: 100%;	color: #fff;
+  font-size: 70px;   letter-spacing: 10px;   	font-family:"幼圆";	text-align: center;	line-height: 310px;
+  position: absolute;
+  top: 0;	left: 0;	z-index: 40;}
+
+
+.xinwen{                   /******新闻中心  big box*****/
+  
+  width: 100%;
+  height: 950px;
+}
+.xinwenCH{                       /*新闻中心 中文标题*/
+  padding: 150px 0 22px 0;
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+}
+.xinwen .xinwenEN{              /*新闻中心 英文标题*/
+  padding: 0 0 95px 0;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+.xinwen .xinwenneirong{        /***轮播部分的big box****/
+  margin: 0 auto;
+  width: 1600px;
+  height: 600px;
+  background-color: #999999;
+    overflow: hidden;
+}
+.zhutu{                       /*轮播 big box 中的图片*/
+  float: left;
+  width: 50%;
+  height: 100%;
+    overflow: hidden;
+}
+.zhutu img{
+  height: 100%;
+}
+.lunbo{                      /*    轮播功能区    */
+  float: right;
+  width: 50%;
+  height: 100%;
+    overflow: hidden;
+}
+
+.hezuo{                     /*      合作伙伴 big box */
+  
+  width: 100%;
+  height: auto;
+}
+.hezuo .hezuoCH{            /*   合作伙伴 中文标题    */
+  padding: 140px 0 22px 0;
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+}
+.hezuo .hezuoEN{            /*    合作伙伴  英文标题   */
+  padding: 0;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+.hezuo .hezuoneirong {      /*    合作伙伴 底图部分    */
+    margin: 0 auto;
+  width: 1600px;
+  height:1050px;
+  overflow: hidden;
+}
+.hezuoneirong img{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.guanzhu {margin: 0 auto;
+width: 1920px;
+height: 50px;
+background-color: #fff;
+
+}
+.guanzhu .guanzhuwomen{
+  float: left;
+  widows: 10%;
+  height: 100%;
+  font-weight:normal;
+  font-size: 35px;
+  font-family: "microsoft yahei";
+  letter-spacing: 5px;
+  line-height: 50px;
+  margin: 0 50px;
+  color:rgb(0, 0, 0);
+}
+
+.tubiao ul{
+  float: left;
+}
+
+.tubiao li{
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+
+
+.bottom{
+  width: 100%;
+  height: 350px;
+  background-color: rgb(47, 0, 255);
+}
+
+/*******轮播*******/
+/*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}*/
+
+.nr2{
+
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+ul.slides {    
+  position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+li.slide {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-size: 120px;
+  color: #fff;
+  transition: .5s transform ease-in-out;
+}
+
+.slide:nth-of-type(1) {
+  background-color: #F2E205;
+}
+
+.slide:nth-of-type(2) {
+  background-color: #F25C05;
+  left: 100%;
+}
+
+.slide:nth-of-type(3) {
+  background-color: #495F8C;
+  left: 200%;
+}
+
+input[type="radio"] {
+  position: relative;
+  z-index: 100;
+  display: none;
+}
+
+.controls-visible {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;
+}
+
+.controls-visible label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: 2px solid #fff;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+  background-color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+  transform: translatex(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+  transform: translatex(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+  transform: translatex(-200%);
+}
+
+
+/* Left/Right Button Classes Below */
+
+.navigator {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 100%;
+  z-index: 100;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: none;
+}
+
+.navigator i {
+  font-size: 32px;
+  color: #333;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked ~ .navigator:nth-of-type(1) {
+  display: flex;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked ~ .navigator:nth-of-type(2) {
+  display: flex;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked ~ .navigator:nth-of-type(3) {
+  display: flex;
+}
