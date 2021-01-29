@@ -534,3 +534,12 @@ input[type="radio"] {
 .slides input[type="radio"]:nth-of-type(3):checked~.navigator:nth-of-type(3) {
   display: flex;
 }
+
+a{
+  text-decoration: none;
+}
+
+.navb{
+  list-style: none;
+  color: #fff;
+}
