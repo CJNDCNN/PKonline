@@ -9,22 +9,25 @@ body{
     font-family: "microsoft yahei";
     -webkit-font-smoothing: antialiased;  /* 字体抗锯齿 */
 }
-a, a:hover, a:active, a:visited, a:link, a:focus {
+/* a, a:hover, a:active, a:visited, a:link, a:focus {
     /* -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; */
-    outline: none;
+/*     outline: none;
     background: none;
     text-decoration: none;
 }
 a:-webkit-any-link {
     /* color: -webkit-link; */
-    cursor: pointer;
-    text-decoration: underline;
+  /*   cursor: pointer;
+    text-decoration: underline; */
+
+a{
+    text-decoration: none;
 }
 ul{
     display: block;
     height: 72px;
-    /* position: absolute; */
+    position: absolute; 
     right: 220px;
     top: 0px;
     cursor: pointer;
@@ -104,17 +107,21 @@ ul, li{
     position: relative;
     z-index: 2;
 }
-.sublist ::before{
+.sublist {
     display: none;
     position: absolute;
+    margin-top: 80px;
     width: 160px;
     left: 50%;
     margin-left: -80px;
     text-align: center;
     z-index: 2;
 }
-.menu_item:hover::before{
+.menu_item:hover .sublist
+{
     display: block;
+   
+    /* background-color: #000000; */
 }
 
 .sublist li {

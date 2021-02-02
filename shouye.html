@@ -1,67 +1,96 @@
     <!-- 1.21 -->
-    <!doctype html>
-    <html>
-    <head>
-    <meta charset="utf-8">
-    <meta name="veiwport" content="width=devicce-width,initial-scale=1.0,maxium-scale=1.0,user-scaleable=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge,chore=1">
-      <link rel="stylesheet" href="css\shouye.css">
-    <title>PK Online</title>
-    </head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
 
-    <body>
-<div class="wrap"> 
-      <div class="head_bar">
-        <div class="container">
-            <div class="logo">
-              <img src="tupian\PK.png" alt="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PK online</title>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>                   <!-- 控制下拉菜单 -->
+    <script type="text/javascript" src="js/js.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/head.css">
+    <link rel="stylesheet" href="css/shouye.css">
+</head>
+<body>
+
+<div class="wrap zh-cn">
+  <!-- BANNER 区域 -->
+  <div class="wrap_head hestate" style="display: block; position: fixed; top: 0px;">
+
+    <div class="head_con">
+        <a class="logo" href=""><h1>Tencent腾讯</h1></a>
+        <ul class="menu_list" style="transform: translate(0px, 0px); opacity: 1;">
+          <li class="menu_item">
+            <a class="txt" href="">业务</a>
+            <ul class="sub_list" style="display: none;">
+              <li><a href="">产品认证</a></li>
+              <li><a href="">应用商城</a></li>
+            </ul>
+          <span class="menu_hook" style="width: 104px;"></span></li>
+          <li class="menu_item">
+            <a class="txt" href="">媒体</a>
+            <ul class="sub_list" style="display: none;">
+              <li><a href="">公司新闻</a></li>
+              <li><a href="">产业动态</a></li>
+            </ul>
+          <span class="menu_hook" style="width: 104px;"></span></li>
+          <li class="menu_item">
+            <a class="txt" href="">支持</a>
+            <ul class="sub_list" style="display: none;">
+              <li><a href="">PK课堂</a></li>
+              <li><a href="">PK问题库</a></li>
+              <li><a href="">PK开放实验室</a></li>
+            </ul>
+          <span class="menu_hook" style="width: 104px;"></span></li>
+          <li class="menu_item">
+            <a class="txt" href="">关于我们</a>
+            <ul class="sub_list" style="display: none;">
+              <li><a href="">公司简介</a></li>
+              <li><a href="">PK人才</a></li>
+            </ul>
+          <span class="menu_hook" style="width: 136px;"></span></li>
+          </div>
+
+    <div class="bg_hover"></div>
+  </div>
+ 
+
+
+    <div class="wrap_content">
+        <div class="banner_area">
+            <video width="100%" id="video" autoplay="" loop="" preload="" muted="" x-webkit-airplay="true" airplay="allow" webkit-playsinline="true" playsinline="true" src="banner.mp4" class="video1 video"></video>
+            <div class="banner_txt">
+                    <div class="txtbox">
+                        <p class="ltxt">PK生态</p> <p class="rtxt">链接未来</p>
+                    </div>
             </div>
             
-            <ul class="nav">
-              <li>
-                <a href="" class="txt">业务</a>
-                <ul class="sublist">
-                    <li><a href="">产品认证</a></li>
-                    <li><a href="">PK商城</a></li>
-                </ul>
-              </li>
-            <li>
-              <a href="" class="txt">媒体</a>
-              <ul class="sublist">
-                <li><a href="">公司新闻</a></li>
-                <li><a href="">产业动态</a></li>
-              </ul>
-            </li>
-              <li>
-                <a href="" class="txt">支持</a>
-                <ul class="sublist">
-                    <li><a href="">PK课堂</a></li>
-                    <li><a href="">PK问题库</a></li>
-                    <li><a href="">PK开放实验室</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="" class="txt">关于我们</a>
-                <ul class="sublist">
-                    <li><a href="">公司简介</a></li>
-                    <li><a href="">PK人才</a></li>
-                </ul>
-              </li>
-              </ul>
-              <div class="denglu">
-                <img src="tupian\login.png" alt="">
-              </div>
-        </div> 
-      </div>
-      
-      <div class="banner">
-        <div class="biaoyu"><p><span>PK</span>生态&emsp;链接未来</p></div>
-        <div class="yingyin"></div>
-        <video  id="video" autoplay loop preload muted x-webkit-airplay="true" airplay="allow" webkit-playsinline="true" playsinline="true" src="banner.mp4"  >
-        </video>
+            <div class="banner_bg"></div>
+        </div>
     </div>
 
-      <!-------------------第二部分-------------------->
+    
+    <script>
+        if($(document).scrollTop()>=$('.wrap_head').height()){
+            $('.wrap_head').addClass('head_white');
+        }else{
+            $('.wrap_head').removeClass('head_white');
+        }
+        $(window).scroll(function(event){
+            if($(document).scrollTop()>=$('.wrap_head').height()){
+                $('.wrap_head').addClass('head_white');
+            }else{
+                $('.wrap_head').removeClass('head_white');
+            }
+        })
+    </script>
+      <!-- BANNER 区域 -->
+    
+ 
+     <!-------------------第二部分-------------------->
     <div class="kouhao">奋力打造我国网信产业核心力量和组织平台</div>
 
       <!-------------------五个入口-------------------->
@@ -109,20 +138,20 @@
     </div>
 
       <!-------------------新闻中心-------------------->
-      <div class="xinwen">
+     <div class="xinwen">
       <div class="xinwenCH">新闻中心</div>
       <div class="xinwenEN">CUSTOMER SERVICE</div>             <!----------标题--------->
       
       <div class="xinwenneirong">
         <div class="zhutu"><img src="tupian\xwnr1.png" alt=""></div>                        <!---------新闻主图--------->
         
-        <div class="lunbo">                 <!----------------------------轮播效果----------------------------------->
-          <ul class="slides">
+       <div class="lunbo">                 <!----------------------------轮播效果----------------------------------->
+         <ul class="slides">
             <input type="radio" id="control-1" name="control" checked>
             <input type="radio" id="control-2" name="control">
             <input type="radio" id="control-3" name="control"> 
 
-          <div class="navigator slide-1">       <!--  Left/Right Button  -->
+          <div class="navigator slide-1">      <!--  Left/Right Button  -->
             <label for="control-3">
                 <i class="fas fa-chevron-left"></i>
             </label>
@@ -166,7 +195,7 @@
       </div>	
     </div>
 
-    <div class="hezuo">                                <!--------合作伙伴----------> 
+    <div class="hezuo">                               <!--------合作伙伴----------> 
       <div class="hezuoCH">合作伙伴</div>             
       <div class="hezuoEN">cooperative partner</div>
       <div class="hezuoneirong"><img src="tupian\hzhb.png" alt=""></div>
@@ -183,6 +212,7 @@
       </ul>
     </div>
     <div class="bottom">
-    </div>
+    </div>  
     </body>
     </html>
+ -->
