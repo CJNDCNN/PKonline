@@ -5,98 +5,87 @@
   padding: 0;
 }
 
-
-
-
-.kouhao {
+.slogan {
   /*奋力打造我国网信产业核心力量和组织平台*/
   float: inherit;
-  width: 100%;
+  width: 1200px;
   height: 45px;
   margin: 0 auto;
-  padding: 140px 0;
-  font-size: 45px;
+  padding: 80px 0;
+  font-size: 30px;
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   font-family: "microsoft yahei";
   color: #8B8F99;
 }
 
-.rukou {
-  width: 1520px;
-  height: 630px;
+.entrance {
+  width: 980px;
+  height: 940px;
   margin: 0 auto;
 }
 
-/*中间五个入口 big box*/
-
-.rukou .rukou1 {
-  float: left;
-  width: 500px;
-  height: 310px;
+.entrance .weblink {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
   position: relative;
   z-index: 0;
   cursor: pointer;
-  /*big box中的 第 一 个 入口*/
-  margin: 0;
+  margin: 5px;
+  overflow: hidden;
 }
 
-.rukou .rukou2 {
-  float: left;
-  width: 1010px;
-  height: 310px;
+.entrance .weblink_b {
+  display: inline-block;
+  width: 610px;
+  height: 600px;
+  border-radius: 20px;
   position: relative;
   z-index: 0;
   cursor: pointer;
-  /*big box中的 第 二 个 入口*/
-  margin: 0 0 0 10px;
+  margin: 5px;
+  overflow: hidden;
 }
 
-.rukou .rukou3 {
-  float: left;
-  width: 500px;
-  height: 310px;
+.entrance .weblink_m {
+  display: inline-block;
+  width: 300px;
+  height: 600px;
+  border-radius: 20px;
   position: relative;
+  z-index: 0;
   cursor: pointer;
-  /*big box中的 第 三 个 入口*/
-  margin: 10px 0 0 0;
+  margin: 5px;
+  overflow: hidden;
 }
 
-.rukou .rukou4 {
-  float: left;
-  width: 500px;
-  height: 310px;
-  position: relative;
-  cursor: pointer;
-  /*big box中的 第 四 个 入口*/
-  margin: 10px 0 0 10px;
+.entrance img {
+  height: 100%;
+  width: 100%;
 }
 
-.rukou .rukou5 {
-  float: left;
-  width: 500px;
-  height: 310px;
-  position: relative;
-  cursor: pointer;
-  /*big box中的 第 五 个 入口*/
-  margin: 10px 0 0 10px;
-}
-
-.liangdu1, .liangdu2, .liangdu3, .liangdu4, .liangdu5 {
-  /*图片亮度变暗*/
+.deepcolor {
   width: 100%;
   height: 100%;
-  background: #000000;
   position: absolute;
   z-index: 20;
-  opacity: 0.4;
+  opacity: 0.8;
+  background: #000000;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(transparent), to(#000));
+  background: -webkit-linear-gradient(transparent, #000);
+  background: -moz-linear-gradient(transparent, #000);
+  background: -ms-linear-gradient(transparent, #000);
+  background: -o-linear-gradient(transparent, #000);
+  background: linear-gradient(transparent, #000);
+  -pie-background: linear-gradient(transparent, #000);
 }
 
-.jianbian1, .jianbian2, .jianbian3, .jianbian4, .jianbian5 {
-  /*蓝色背景平移*/
+.hoverblue {
   width: 100%;
   height: 100%;
-  background: #3551a2;
+  background: rgba(13, 39, 77, 9);
   position: absolute;
   z-index: 30;
   opacity: 0.0;
@@ -106,42 +95,130 @@
 
 /*蓝色变深*/
 
-.rukou1:hover .jianbian1, .rukou2:hover .jianbian2, .rukou3:hover .jianbian3, .rukou4:hover .jianbian4, .rukou5:hover .jianbian5 {
-  opacity: 0.7;
+.weblink:hover .deepcolor, .weblink_b:hover .deepcolor, .weblink_s:hover .deepcolor {
+  opacity: 0;
   transition: all 0.3s ease-in;
 }
 
 /*黑色变浅*/
 
-.rukou1:hover .liangdu1, .rukou2:hover .liangdu2, .rukou3:hover .liangdu3, .rukou4:hover .liangdu4, .rukou5:hover .liangdu5 {
-  opacity: 0.1;
+.weblink:hover .hoverblue, .weblink_b:hover .hoverblue, .weblink_s:hover .hoverblue {
+  opacity: 0.8;
   transition: all 0.3s ease-in;
 }
 
+
 /*入口文字属性*/
 
-.rukou1 .rukou1wenzi, .rukou2 .rukou2wenzi, .rukou3 .rukou3wenzi, .rukou4 .rukou4wenzi, .rukou5 .rukou5wenzi {
+.weblink_txt {
   width: 100%;
   height: 100%;
   color: #fff;
-  font-size: 70px;
-  letter-spacing: 10px;
+  font-size: 30px;
+  letter-spacing: 5px;
   font-family: "幼圆";
-  text-align: center;
-  line-height: 310px;
+  text-align: left;
+  line-height: 40px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 240px;
+  left: 20px;
   z-index: 40;
 }
+.weblink_b .weblink_txt, .weblink_m .weblink_txt {
+  position: absolute;
+  top: 540px;
+  left: 20px;
+  z-index: 40;
+}
+.weblink:hover .weblink_txt {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.weblink_b:hover .weblink_txt,
+.weblink_m:hover .weblink_txt {
+  position: absolute;
+  top: 440px;
+  left: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.weblink:hover .weblink_txt5, 
+.weblink:hover .weblink_txt4{
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  transition: all 0.2s ease-in-out;
+}
 
-.xinwen {
+
+
+
+/*入口介绍标签平移动画*/
+.introduce{
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  z-index: 100;
+}
+.introduce_m,.introduce_b{
+  position: absolute;
+  top: 480px;
+  left: 20px;
+  z-index: 100;
+}
+.introduce_5,.introduce_4{
+  position: absolute;
+  top: 210px;
+  left: 20px;
+  z-index: 100;
+}
+.introduce{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-family: "幼圆";
+  text-align: left;
+  line-height: 30px;
+}
+.introduce p{
+  margin-top: 5px;
+  transform: translate(-200px);
+}
+.weblink_m:hover .introduce p,
+.weblink_b:hover .introduce p,
+.weblink:hover .introduce p {
+  transform: translate(0);
+  transition: all 0.4s ease-in-out;
+}
+.weblink_m:hover .introduce p:nth-of-type(1),
+.weblink_b:hover .introduce p:nth-of-type(1),
+.weblink:hover .introduce p:nth-of-type(1) {
+  transition-delay: 0.1s;
+}
+.weblink_m:hover .introduce p:nth-of-type(2),
+.weblink_b:hover .introduce p:nth-of-type(2),
+.weblink:hover .introduce p:nth-of-type(2) {
+  transition-delay: 0.15s;
+}
+.weblink_m:hover .introduce p:nth-of-type(3),
+.weblink_b:hover .introduce p:nth-of-type(3),
+.weblink:hover .introduce p:nth-of-type(3) {
+  transition-delay: 0.2s;
+}
+
+
+
+
+.news {
   /******新闻中心  big box*****/
   width: 100%;
   height: 950px;
 }
 
-.xinwenCH {
+.newsCH {
   /*新闻中心 中文标题*/
   padding: 150px 0 22px 0;
   font-size: 35px;
@@ -149,7 +226,7 @@
   text-align: center;
 }
 
-.xinwen .xinwenEN {
+.news .newsEN {
   /*新闻中心 英文标题*/
   padding: 0 0 95px 0;
   font-size: 18px;
@@ -157,11 +234,12 @@
   text-align: center;
 }
 
-.xinwen .xinwenneirong {
+
+.news .newscontent {
   /***轮播部分的big box****/
   margin: 0 auto;
-  width: 1600px;
-  height: 600px;
+  width: 1200px;
+  height: 450px;
   background-color: #999999;
   overflow: hidden;
 }
@@ -178,7 +256,7 @@
   height: 100%;
 }
 
-.lunbo {
+.slideshow {
   /*    轮播功能区    */
   float: right;
   width: 50%;
@@ -186,13 +264,13 @@
   overflow: hidden;
 }
 
-.hezuo {
+.cooperative {
   /*      合作伙伴 big box */
   width: 100%;
   height: auto;
 }
 
-.hezuo .hezuoCH {
+.cooperative .cooperativeCH {
   /*   合作伙伴 中文标题    */
   padding: 140px 0 22px 0;
   font-size: 35px;
@@ -200,7 +278,7 @@
   text-align: center;
 }
 
-.hezuo .hezuoEN {
+.cooperative .cooperativeEN {
   /*    合作伙伴  英文标题   */
   padding: 0;
   font-size: 18px;
@@ -208,7 +286,7 @@
   text-align: center;
 }
 
-.hezuo .hezuoneirong {
+.cooperative .cooperativecontent {
   /*    合作伙伴 底图部分    */
   margin: 0 auto;
   width: 1600px;
@@ -216,20 +294,20 @@
   overflow: hidden;
 }
 
-.hezuoneirong img {
+.cooperativecontent img {
   margin: 0 auto;
   width: 100%;
   height: auto;
 }
 
-.guanzhu {
+.attention {
   margin: 0 auto;
   width: 1920px;
   height: 50px;
   background-color: #fff;
 }
 
-.guanzhu .guanzhuwomen {
+.attention .attentionus {
   float: left;
   widows: 10%;
   height: 100%;
@@ -242,11 +320,11 @@
   color: rgb(0, 0, 0);
 }
 
-.tubiao ul {
+.icon ul {
   float: left;
 }
 
-.tubiao li {
+.icon li {
   float: left;
   margin: 0 10px;
   list-style: none;
@@ -268,11 +346,7 @@
   min-height: 100vh;
 }*/
 
-.nr2 {
-  float: left;
-  width: 50%;
-  height: 100%;
-}
+
 
 ul.slides {
   position: relative;
@@ -301,17 +375,20 @@ li.slide {
   transition: .5s transform ease-in-out;
 }
 
-.slide .slide_font{
+.slide .slide_font {
   margin-top: 20%;
   margin-left: 20px;
-  margin-right:20px
+  margin-right: 20px
 }
- h3{
+
+h3 {
   display: block;
- }
- .slide p{
-   display: block;
- }
+}
+
+.slide p {
+  display: block;
+}
+
 .slide:nth-of-type(1) {
   background-color: #3651a2;
 }
@@ -347,19 +424,23 @@ input[type="radio"] {
   margin: 0 10px;
   border: 1px solid #4e4e4e;
 }
+
 /*轮播按钮*/
+
 .slides input[type="radio"]:nth-of-type(1):checked~.controls-visible label:nth-of-type(1) {
   background-color: #fff;
 }
 
 .slides input[type="radio"]:nth-of-type(2):checked~.controls-visible label:nth-of-type(2) {
-  background-color:#fff;
+  background-color: #fff;
 }
 
 .slides input[type="radio"]:nth-of-type(3):checked~.controls-visible label:nth-of-type(3) {
   background-color: #fff;
 }
+
 /*轮播按钮*/
+
 .slides input[type="radio"]:nth-of-type(1):checked~.slide {
   transform: translatex(0%);
 }
@@ -404,11 +485,11 @@ input[type="radio"] {
   display: flex;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.navb{
+.navb {
   list-style: none;
   color: #fff;
 }

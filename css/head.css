@@ -161,7 +161,7 @@
   
   
   /*菜单*/
-  .menu_list{ display: block; height:72px; position: absolute; right: 220px; top: 0px; cursor: pointer; opacity: 1; transition:opacity 0.3s linear;transform: translate(0px,0);}
+  .menu_list{ display: block; height:72px; position: absolute; right: 80px; top: 0px; cursor: pointer; opacity: 1; transition:opacity 0.3s linear;transform: translate(0px,0);}
   .menu_list .menu_item{ display: inline-block; height:72px; float: left; margin-left:72px; position: relative;}
   .en-us .menu_list .menu_item{
     margin-left: 36px;
