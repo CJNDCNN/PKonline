@@ -1,99 +1,109 @@
-    <!-- 1.21 -->
+<!-- 1.21 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PK online</title>
+  <title>PK online</title>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>                   <!-- 控制下拉菜单 -->
-    <script type="text/javascript" src="js/js.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script> <!-- 控制下拉菜单 -->
+  <script type="text/javascript" src="js/js.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/head.css">
-    <link rel="stylesheet" href="css/shouye.css">
+  <link rel="stylesheet" type="text/css" href="css/head.css">
+  <link rel="stylesheet" href="css/shouye.css">
 </head>
+
 <body>
 
-<div class="wrap zh-cn">
-  <!-- BANNER 区域 -->
-  <div class="wrap_head hestate" style="display: block; position: fixed; top: 0px;">
+  <div class="wrap zh-cn">
+    <!-- BANNER 区域 -->
+    <div class="wrap_head hestate" style="display: block; position: fixed; top: 0px;">
 
-    <div class="head_con">
-        <a class="logo" href=""><h1>Tencent腾讯</h1></a>
+      <div class="head_con">
+        <a class="logo" href="www.baidu.com">
+          <h1></h1>
+        </a>
         <ul class="menu_list" style="transform: translate(0px, 0px); opacity: 1;">
           <li class="menu_item">
             <a class="txt" href="">业务</a>
-            <ul class="sub_list" >
+            <ul class="sub_list">
               <li><a href="">产品认证</a></li>
               <li><a href="">应用商城</a></li>
             </ul>
-          <span class="menu_hook" style="width: 104px;"></span></li>
+            <span class="menu_hook" style="width: 104px;"></span>
+          </li>
           <li class="menu_item">
             <a class="txt" href="">媒体</a>
-            <ul class="sub_list" >
+            <ul class="sub_list">
               <li><a href="">公司新闻</a></li>
               <li><a href="">产业动态</a></li>
             </ul>
-          <span class="menu_hook" style="width: 104px;"></span></li>
+            <span class="menu_hook" style="width: 104px;"></span>
+          </li>
           <li class="menu_item">
             <a class="txt" href="">支持</a>
-            <ul class="sub_list" >
+            <ul class="sub_list">
               <li><a href="">PK课堂</a></li>
               <li><a href="">PK问题库</a></li>
               <li><a href="">PK开放实验室</a></li>
             </ul>
-          <span class="menu_hook" style="width: 104px;"></span></li>
+            <span class="menu_hook" style="width: 104px;"></span>
+          </li>
           <li class="menu_item">
             <a class="txt" href="">关于我们</a>
-            <ul class="sub_list" >
+            <ul class="sub_list">
               <li><a href="">公司简介</a></li>
               <li><a href="">PK人才</a></li>
             </ul>
-          <span class="menu_hook" style="width: 136px;"></span></li>
-          </div>
+            <span class="menu_hook" style="width: 136px;"></span>
+          </li>
+      </div>
 
-    <div class="bg_hover"></div>
-  </div>
- 
+      <div class="bg_hover"></div>
+    </div>
+
 
 
     <div class="wrap_content">
-        <div class="banner_area">
-            <video width="100%" id="video" autoplay="" loop="" preload="" muted="" x-webkit-airplay="true" airplay="allow" webkit-playsinline="true" playsinline="true" src="banner.mp4" class="video1 video"></video>
-            <div class="banner_txt">
-                    <div class="txtbox">
-                        <p class="ltxt">PK生态</p> <p class="rtxt">链接未来</p>
-                    </div>
-            </div>
-            
-            <div class="banner_bg"></div>
+      <div class="banner_area">
+        <video width="100%" id="video" autoplay="" loop="" preload="" muted="" x-webkit-airplay="true" airplay="allow"
+          webkit-playsinline="true" playsinline="true" src="banner.mp4" class="video1 video"></video>
+        <div class="banner_txt">
+          <div class="txtbox">
+            <p class="ltxt">PK生态</p>
+            <p class="rtxt">链接未来</p>
+          </div>
         </div>
+
+        <div class="banner_bg"></div>
+      </div>
     </div>
 
-    
+
     <script>
-        if($(document).scrollTop()>=$('.wrap_head').height()){
-            $('.wrap_head').addClass('head_white');
-        }else{
-            $('.wrap_head').removeClass('head_white');
+      if ($(document).scrollTop() >= $('.wrap_head').height()) {
+        $('.wrap_head').addClass('head_white');
+      } else {
+        $('.wrap_head').removeClass('head_white');
+      }
+      $(window).scroll(function (event) {
+        if ($(document).scrollTop() >= $('.wrap_head').height()) {
+          $('.wrap_head').addClass('head_white');
+        } else {
+          $('.wrap_head').removeClass('head_white');
         }
-        $(window).scroll(function(event){
-            if($(document).scrollTop()>=$('.wrap_head').height()){
-                $('.wrap_head').addClass('head_white');
-            }else{
-                $('.wrap_head').removeClass('head_white');
-            }
-        })
+      })
     </script>
-      <!-- BANNER 区域 -->
-    
- 
-     <!-------------------第二部分-------------------->
+    <!-- BANNER 区域 -->
+
+
+    <!-------------------第二部分-------------------->
     <div class="slogan">奋力打造我国网信产业核心力量和组织平台</div>
 
-      <!-------------------五个入口-------------------->
+    <!-------------------五个入口-------------------->
     <div class="entrance">
       <div class="weblink  weblink_m">
         <div class="deepcolor"></div>
@@ -160,50 +170,54 @@
       </div>
     </div>
 
-      <!-------------------新闻中心-------------------->
-     <div class="news">
+    <!-------------------新闻中心-------------------->
+    <div class="news">
       <div class="newsCH">新闻中心</div>
-      <div class="newsEN">CUSTOMER SERVICE</div>             <!----------标题--------->
-      
+      <div class="newsEN">CUSTOMER SERVICE</div>
+      <!----------标题--------->
+
       <div class="newscontent">
-        <!-- <div class="zhutu"><img src="tupian\xwnr1.png" alt=""></div>   -->                      <!---------新闻主图--------->
-        
-       <div class="slideshow">                 <!----------------------------轮播效果----------------------------------->
-         <ul class="slides">
+        <!-- <div class="zhutu"><img src="tupian\xwnr1.png" alt=""></div>   -->
+        <!---------新闻主图--------->
+
+        <div class="slideshow">
+          <!----------------------------轮播效果----------------------------------->
+          <ul class="slides">
             <input type="radio" id="control-1" name="control" checked>
             <input type="radio" id="control-2" name="control">
-            <input type="radio" id="control-3" name="control"> 
+            <input type="radio" id="control-3" name="control">
 
-          <div class="navigator slide-1">      <!--  Left/Right Button  -->
-            <label for="control-3">
+            <div class="navigator slide-1">
+              <!--  Left/Right Button  -->
+              <label for="control-3">
                 <i class="fas fa-chevron-left"></i>
-            </label>
+              </label>
 
-            <label for="control-2">
-              <i class="fas fa-chevron-right"></i>
-            </label>
-          </div>
-      
-          <div class="navigator slide-2">
+              <label for="control-2">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+            </div>
+
+            <div class="navigator slide-2">
               <label for="control-1">
                 <i class="fas fa-chevron-left"></i>
               </label>
 
-            <label for="control-3">
-              <i class="fas fa-chevron-right"></i>
-            </label>
-          </div>
-      
-            <div class="navigator slide-3">
-                <label for="control-2">
-              <i class="fas fa-chevron-left"></i>
+              <label for="control-3">
+                <i class="fas fa-chevron-right"></i>
               </label>
-                <label for="control-1">
-                  <i class="fas fa-chevron-right"></i>
-                </label>
-            </div>                                     <!--  /Left/Right Button  -->
-    
-      
+            </div>
+
+            <div class="navigator slide-3">
+              <label for="control-2">
+                <i class="fas fa-chevron-left"></i>
+              </label>
+              <label for="control-1">
+                <i class="fas fa-chevron-right"></i>
+              </label>
+            </div> <!--  /Left/Right Button  -->
+
+
             <li class="slide">
               <div class="slide_img"><img src="tupian\xwnr1.png" alt=""></div>
               <div class="slide_txt">
@@ -225,22 +239,23 @@
                 <p>PK体系助力联想发布5G核心网FutureCore产品构建云网融合新生态</p>
               </div>
             </li>
-      
-              <div class="controls-visible">
-                  <label for="control-1"></label>
-                  <label for="control-2"></label>
-                  <label for="control-3"></label>
-              </div>
+
+            <div class="controls-visible">
+              <label for="control-1"></label>
+              <label for="control-2"></label>
+              <label for="control-3"></label>
+            </div>
           </ul>
         </div>
-      </div>	
+      </div>
     </div>
 
-    <div class="cooperative">                               <!--------合作伙伴----------> 
-      <div class="cooperativeCH">合作伙伴</div>             
+    <div class="cooperative">
+      <!--------合作伙伴---------->
+      <div class="cooperativeCH">合作伙伴</div>
       <div class="cooperativeEN">cooperative partner</div>
       <div class="cooperativecontent"><img src="tupian\hzhb.png" alt=""></div>
-      
+
     </div>
 
     <div class="attention">
@@ -253,7 +268,8 @@
       </ul>
     </div>
     <div class="bottom">
-    </div>  
-    </body>
-    </html>
- -->
+    </div>
+</body>
+
+</html>
+-->
