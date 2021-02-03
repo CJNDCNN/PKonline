@@ -20,14 +20,14 @@
 }
 
 .entrance {
-  width: 980px;
+  width: 1280px;
   height: 940px;
   margin: 0 auto;
 }
 
 .entrance .weblink {
   display: inline-block;
-  width: 300px;
+  width: 400px;
   height: 300px;
   border-radius: 20px;
   position: relative;
@@ -40,7 +40,7 @@
 
 .entrance .weblink_b {
   display: inline-block;
-  width: 610px;
+  width: 810px;
   height: 600px;
   border-radius: 20px;
   position: relative;
@@ -52,7 +52,7 @@
 
 .entrance .weblink_m {
   display: inline-block;
-  width: 300px;
+  width: 400px;
   height: 600px;
   border-radius: 20px;
   position: relative;
@@ -213,6 +213,11 @@
 
 
 
+
+
+
+
+
 .news {
   /******新闻中心  big box*****/
   width: 100%;
@@ -236,8 +241,8 @@
 }
 
 
+ /***轮播部分的big box****/
 .news .newscontent {
-  /***轮播部分的big box****/
   margin: 0 auto;
   width: 1200px;
   height: 450px;
@@ -252,91 +257,26 @@
   height: 100%;
   overflow: hidden;
 }
-
 .zhutu img {
   height: 100%;
 }
 
-.slideshow {
+
   /*    轮播功能区    */
+/* .slideshow {
   float: right;
   width: 50%;
   height: 100%;
   overflow: hidden;
-}
+} */
 
-.cooperative {
-  /*      合作伙伴 big box */
+.slideshow {
+  float: left;
   width: 100%;
-  height: auto;
-}
-
-.cooperative .cooperativeCH {
-  /*   合作伙伴 中文标题    */
-  padding: 140px 0 22px 0;
-  font-size: 35px;
-  color: #000;
-  text-align: center;
-}
-
-.cooperative .cooperativeEN {
-  /*    合作伙伴  英文标题   */
-  padding: 0;
-  font-size: 18px;
-  color: #999;
-  text-align: center;
-}
-
-.cooperative .cooperativecontent {
-  /*    合作伙伴 底图部分    */
-  margin: 0 auto;
-  width: 1600px;
-  height: 1050px;
+  height: 100%;
   overflow: hidden;
 }
 
-.cooperativecontent img {
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
-
-.attention {
-  margin: 0 auto;
-  width: 1920px;
-  height: 50px;
-  background-color: #fff;
-}
-
-.attention .attentionus {
-  float: left;
-  widows: 10%;
-  height: 100%;
-  font-weight: normal;
-  font-size: 35px;
-  font-family: "microsoft yahei";
-  letter-spacing: 5px;
-  line-height: 50px;
-  margin: 0 50px;
-  color: rgb(0, 0, 0);
-}
-
-.icon ul {
-  float: left;
-}
-
-.icon li {
-  float: left;
-  margin: 0 10px;
-  list-style: none;
-  cursor: pointer;
-}
-
-.bottom {
-  width: 100%;
-  height: 350px;
-  background-color: rgb(47, 0, 255);
-}
 
 
 
@@ -358,7 +298,7 @@
 
 
 
-ul.slides {
+ul.slides{
   position: relative;
   width: 100%;
   height: 100%;
@@ -385,27 +325,44 @@ li.slide {
   transition: .5s transform ease-in-out;
 }
 
-.slide .slide_font {
+.slide_img{
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* .slide .slide_font {
   margin-top: 20%;
   margin-left: 20px;
   margin-right: 20px
-}
+} */
 
-h3 {
-  display: block;
+.slide_txt{
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
 }
-
-.slide p{
+.slide_txt p{
   cursor:text;
 }
-.slide p:nth-of-type(1){
+.slide_txt p:nth-of-type(1){
   display: block;
   margin-top: 100px;
   margin-left: 50px;
   font-size: 28px;
   letter-spacing: 2px;
 }
-.slide p:nth-of-type(2){
+.slide_txt p:nth-of-type(2){
   display: block;
   margin-top: 60px;
   margin-left: 50px;
@@ -517,4 +474,81 @@ a {
 .navb {
   list-style: none;
   color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ /*      合作伙伴 big box */
+.cooperative {
+  width: 100%;
+  height: auto;
+}
+
+.cooperative .cooperativeCH {
+  padding: 140px 0 22px 0;
+  font-size: 35px;
+  color: #000;
+  text-align: center;
+}
+.cooperative .cooperativeEN {
+  padding: 0;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}
+  /*    合作伙伴 底图部分    */
+.cooperative .cooperativecontent {
+  margin: 0 auto;
+  width: 1600px;
+  height: 1050px;
+  overflow: hidden;
+}
+.cooperativecontent img {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+
+.attention {
+  margin: 0 auto;
+  width: 1920px;
+  height: 50px;
+  background-color: #fff;
+}
+.attention .attentionus {
+  float: left;
+  widows: 10%;
+  height: 100%;
+  font-weight: normal;
+  font-size: 35px;
+  font-family: "microsoft yahei";
+  letter-spacing: 5px;
+  line-height: 50px;
+  margin: 0 50px;
+  color: rgb(0, 0, 0);
+}
+
+.icon ul {
+  float: left;
+}
+.icon li {
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+  cursor: pointer;
+}
+.bottom {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(47, 0, 255);
 }
