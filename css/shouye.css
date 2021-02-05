@@ -221,12 +221,12 @@
 .news {
   /******新闻中心  big box*****/
   width: 100%;
-  height: 950px;
+  height: 850px;
 }
 
 .newsCH {
   /*新闻中心 中文标题*/
-  padding: 150px 0 22px 0;
+  padding: 120px 0 22px 0;
   font-size: 35px;
   color: #000;
   text-align: center;
@@ -491,14 +491,18 @@ a {
 .cooperative {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .cooperative .cooperativeCH {
-  padding: 140px 0 22px 0;
+  width: auto;
+  height: auto;
+  padding: 50px 0 22px 0;
   font-size: 35px;
   color: #000;
   text-align: center;
 }
+
 .cooperative .cooperativeEN {
   padding: 0;
   font-size: 18px;
@@ -508,8 +512,8 @@ a {
   /*    合作伙伴 底图部分    */
 .cooperative .cooperativecontent {
   margin: 0 auto;
-  width: 1600px;
-  height: 1050px;
+  width: 1200px;
+  height: auto;
   overflow: hidden;
 }
 .cooperativecontent img {
@@ -519,6 +523,47 @@ a {
 }
 
 
+.middle{
+  float: left;
+  width: 100%;
+  position: absolute;
+  top: 820px;
+}
+.counting-sec{
+  width: 100%;
+  /* background: linear-gradient(90deg,#3c6382,#82ccdd); */
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1;
+  text-align: center;
+  color: #2980b9;
+  text-transform: uppercase;
+}
+.col p:nth-of-type(1){
+  font-size: 20px;
+  color: #000;
+}
+.col p:nth-of-type(2){
+  color: #000;
+}
+
+.col i{
+  font-size: 40px;
+  color: #333;
+}
+.num{
+  display: inline;
+  font-weight: bolder;
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+/* 
 .attention {
   margin: 0 auto;
   width: 1920px;
@@ -551,4 +596,4 @@ a {
   width: 100%;
   height: 350px;
   background-color: rgb(47, 0, 255);
-}
+} */
