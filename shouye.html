@@ -12,9 +12,9 @@
   <script type="text/javascript" src="js/jquery.min.js"></script> <!-- 控制下拉菜单 -->
   <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+  <script src="js/countUp.js"></script>
   <link rel="stylesheet" type="text/css" href="css/head.css">
   <link rel="stylesheet" href="css/shouye.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -268,18 +268,18 @@
           <div class="inner-width">
             <div class="col">
                <!-- <i class="fa fa-user-circle-o"></i> -->
-              <div class="num">400</div><div style="display: inline; font-size: 40px;margin-left: 5px; line-height: 50px; text-align:center; font-weight: bolder;">+</div>
+              <span id="num1" class="num">400</span><div style="display: inline; font-size: 40px;margin-left: 5px; line-height: 50px; text-align:center; font-weight: bolder;">+</div>
               <p>生态伙伴单位</p><p>coopertive partner</p>
             </div>
 
             <div class="col">
               <!-- <i class="fa fa-user-circle-o"></i> -->
-             <div class="num">100</div><div style="display: inline; font-size: 40px;margin-left: 5px; line-height: 50px; text-align:center; font-weight: bolder;">亿+</div>
+             <div id="num2" class="num">100</div><div style="display: inline; font-size: 40px;margin-left: 5px; line-height: 50px; text-align:center; font-weight: bolder;">亿+</div>
              <p>累计投资</p><p>cumul investm</p>
            </div>
            <div class="col">
             <!-- <i class="fa fa-user-circle-o"></i> -->
-           <div class="num">416</div><div style="display: inline; font-size: 40px;margin-left: 5px; line-height: 50px; text-align:center; font-weight: bolder;">款</div>
+           <div id="num3" class="num">416</div><div style="display: inline; font-size: 40px;margin-left: 5px; line-height: 50px; text-align:center; font-weight: bolder;">款</div>
             <p>推出产品</p><p>product</p>
          </div>
           </div>
@@ -291,7 +291,29 @@
     </div>
 
     <script type="text/javascript">
-     $(".num").counterUp({delay:10,time:1000});
+    //  $(".num").counterUp({delay:10,time:1000});
+    var options={
+        useEasing: true,  // 过渡动画效果，默认ture
+        useGrouping: true,  // 千分位效果，例：1000->1,000。默认true
+    }
+    // dom节点, 初始值,  结束值, 小数位数, 过渡几秒 , 初始参数
+    var nums = [400,100,416];
+    var num1 = new CountUp('num1', 0, nums[0], 0, 3,options),
+        num2 = new CountUp('num2', 0, nums[1], 0, 3,options),
+        num3 = new CountUp('num3', 0, nums[2], 0, 3,options)
+
+    window.onscroll = function(){
+      if(($(window).scrollTop()>($('.num').offset().top+$('.num').outerHeight()))||(($(window).scrollTop()+$(window).height())<$('.num').offset().top)){
+        console.log(1);
+        num1.reset();
+        num1.update(nums[0]);
+        num2.reset();
+        num2.update(nums[1]);
+        num3.reset();
+        num3.update(nums[2]);
+      }
+    }
+    
     </script>
 
     
